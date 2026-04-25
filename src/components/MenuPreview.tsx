@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { FullMenu } from './FullMenu';
 
 export function MenuPreview() {
+  const [isFullMenuOpen, setIsFullMenuOpen] = useState(false);
+
   const menuItems = [
     {
       name: 'Iced Vanilla Latte',
@@ -72,13 +76,18 @@ export function MenuPreview() {
         ))}
       </div>
       
-      <button className="w-full mt-6 py-4 border-t border-white/5 text-[11px] font-black uppercase tracking-widest text-[#B3001B] hover:text-red-400 transition-colors flex items-center justify-center gap-2 group z-10 relative bg-gradient-to-t from-black/20 to-transparent rounded-b-xl">
+      <button 
+        onClick={() => setIsFullMenuOpen(true)}
+        className="w-full mt-6 py-4 border-t border-white/5 text-[11px] font-black uppercase tracking-widest text-[#B3001B] hover:text-red-400 transition-colors flex items-center justify-center gap-2 group z-10 relative bg-gradient-to-t from-black/20 to-transparent rounded-b-xl"
+      >
         Browse Full Catalog 
         <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
       </button>
 
       {/* Decorative Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#B3001B]/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+      <FullMenu isOpen={isFullMenuOpen} onClose={() => setIsFullMenuOpen(false)} />
     </section>
   );
 }

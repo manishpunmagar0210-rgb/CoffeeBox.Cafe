@@ -40,7 +40,7 @@ export function Hero() {
           </h1>
           
           <p className="text-white/70 max-w-md text-sm md:text-base mb-10 leading-relaxed font-medium">
-            Experience the premium café culture at the heart of Kathmandu. From artisanal beans to artisan moments, we brew perfection in every cup.
+            Whether you're stopping by for breakfast, lunch, or an evening drink, we promise great flavors, friendly service, and good vibes every time. Experience our open kitchen, bar counter, and highway views right here in Kathmandu.
           </p>
         </motion.div>
 

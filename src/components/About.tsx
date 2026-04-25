@@ -8,7 +8,7 @@ export function About() {
         
         <div className="flex-grow flex flex-col justify-center">
           <p className="text-white/80 text-sm leading-relaxed mb-6 font-medium">
-            We source 100% locally roasted beans to craft the perfect cup. Every batch is meticulously balanced to deliver bold, unforgettable flavor.
+            Coffee Box is a cozy café-restaurant offering freshly brewed coffee, delicious meals, and quick bites in a warm and welcoming space. With an open kitchen, bar counter, and highway view, we're the perfect spot to relax with friends, enjoy family time, or grab a quick coffee on the go.
           </p>
           
           <div className="grid grid-cols-2 gap-4 mt-auto">
