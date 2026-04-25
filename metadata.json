@@ -1,0 +1,6 @@
+{
+  "name": "CoffeeBox.Cafe",
+  "description": "Premium café landing page for CoffeeBox.Cafe in Kathmandu. Contains menu, reviews, map, and contact form.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": []
+}
