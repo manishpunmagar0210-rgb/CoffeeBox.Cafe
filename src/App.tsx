@@ -45,7 +45,7 @@ export default function App() {
             
             {/* Order Now (Desktop Floating / Mobile Bottom) */}
             <a 
-              href="#order"
+              href="#contact"
               className="bg-[#B3001B] hover:bg-[#990017] text-white p-4 rounded-full shadow-lg shadow-[#B3001B]/30 hover:scale-105 active:scale-95 transition-transform flex items-center justify-center group"
               aria-label="Order Now"
             >

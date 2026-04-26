@@ -36,9 +36,9 @@ export function Navbar() {
 
       {/* CTA Button */}
       <div className="hidden md:block">
-        <button className="bg-[#B3001B] text-white px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-red-700 transition-colors shadow-[0_0_15px_rgba(179,0,27,0.3)] border border-red-500/20">
+        <a href="#contact" className="inline-block bg-[#B3001B] text-white px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-red-700 transition-colors shadow-[0_0_15px_rgba(179,0,27,0.3)] border border-red-500/20">
           Order Now
-        </button>
+        </a>
       </div>
 
       {/* Mobile Nav Toggle */}
@@ -64,12 +64,13 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
-            <button
+            <a
+              href="#contact"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-6 bg-[#B3001B] text-white px-6 py-4 rounded-lg text-xs font-bold uppercase tracking-widest text-center"
             >
               Order Now
-            </button>
+            </a>
           </nav>
         </div>
       )}
